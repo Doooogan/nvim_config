@@ -79,4 +79,17 @@ keymap('n', "<leader>cd",":cd %:p:h<cr>",opts )
 keymap("n", "<leader>ff", ":Telescope find_files<cr>", opts)
 keymap("n", "<leader>fg", ":Telescope live_grep<cr>", opts)
 
+-- Telekasten
+--
+keymap('n','<leader>zf',':Telekasten find_notes<cr><cr>',opts)
+keymap('n','<leader>zn',':Telekasten new_note<cr>',opts)
+keymap('n','<leader>zd',':Telekasten find_dail_notes<cr>',opts)
+keymap('n','<leader>zg',':Telekasten search_notes<cr>',opts)
+keymap('n','<cr>',':Telekasten follow_link<cr>',opts)
 
+keymap('n','<leader>zf',':Telekasten panel<cr>',opts)
+
+
+
+-- Vim Basics
+keymap('n','<leader>cfg',':e ~/.config/nvim/init.lua<cr>',opts)
